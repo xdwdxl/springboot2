@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="oy@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="oy">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bbs"/>
+    <schema id="4" parent="1" name="day01"/>
+    <schema id="5" parent="1" name="db_expressprint"/>
+    <schema id="6" parent="1" name="db_test"/>
+    <schema id="7" parent="1" name="deom"/>
+    <schema id="8" parent="1" name="gjp"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="javashixun"/>
+    <schema id="11" parent="1" name="ksgl"/>
+    <schema id="12" parent="1" name="mydb"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="online_test"/>
+    <schema id="15" parent="1" name="performance_schema"/>
+    <schema id="16" parent="1" name="project"/>
+    <schema id="17" parent="1" name="stuinfo"/>
+    <schema id="18" parent="1" name="supermarket"/>
+    <schema id="19" parent="1" name="test"/>
+    <table id="20" parent="2" name="bb"/>
+    <table id="21" parent="2" name="c"/>
+    <table id="22" parent="2" name="score"/>
+    <table id="23" parent="2" name="shop"/>
+    <table id="24" parent="2" name="student"/>
+    <table id="25" parent="2" name="teacher"/>
+    <table id="26" parent="2" name="user"/>
+    <table id="27" parent="2" name="zrb"/>
+    <view id="28" parent="2" name="v1">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="29" parent="2" name="vew3">
+      <Comment>VIEW</Comment>
+    </view>
+    <column id="30" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="20" name="name">
+      <Position>2</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="32" parent="20" name="sex">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="33" parent="20" name="age">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <key id="34" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="21" name="课程号">
+      <Position>1</Position>
+      <DataType>char(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="21" name="课程名称">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="21" name="教工编号">
+      <Position>3</Position>
+      <DataType>char(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="22" name="学号">
+      <Position>1</Position>
+      <DataType>char(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="22" name="课程号">
+      <Position>2</Position>
+      <DataType>char(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="22" name="成绩">
+      <Position>3</Position>
+      <DataType>decimal(4)|0</DataType>
+    </column>
+    <column id="41" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="23" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="43" parent="23" name="price">
+      <Position>3</Position>
+      <DataType>float(4,1)|0</DataType>
+    </column>
+    <key id="44" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="24" name="学号">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="24" name="学生姓名">
+      <Position>2</Position>
+      <DataType>varchar(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="24" name="学生性别">
+      <Position>3</Position>
+      <DataType>varchar(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="24" name="学生出生年月">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="24" name="学生所在班级">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="25" name="Tno">
+      <Position>1</Position>
+      <DataType>char(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="25" name="Tname">
+      <Position>2</Position>
+      <DataType>char(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="25" name="Tsex">
+      <Position>3</Position>
+      <DataType>char(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="25" name="Tbirthday">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="54" parent="25" name="Prof">
+      <Position>5</Position>
+      <DataType>char(6)|0</DataType>
+    </column>
+    <column id="55" parent="25" name="Depart">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="26" name="username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="58" parent="26" name="address">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="59" parent="26" name="age">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <key id="60" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="27" name="sd">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="27" name="td">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="27" name="cz">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="27" name="lj">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="27" name="Scome">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="66" parent="28" name="学号">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="28" name="学生姓名">
+      <Position>2</Position>
+      <DataType>varchar(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="28" name="学生性别">
+      <Position>3</Position>
+      <DataType>varchar(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="28" name="学生出生年月">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="28" name="学生所在班级">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="29" name="MAX(成绩)">
+      <Position>1</Position>
+      <DataType>decimal(4)|0</DataType>
+    </column>
+    <column id="72" parent="29" name="MIN(成绩)">
+      <Position>2</Position>
+      <DataType>decimal(4)|0</DataType>
+    </column>
+    <column id="73" parent="29" name="AVG(成绩)">
+      <Position>3</Position>
+      <DataType>decimal(8,4)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
