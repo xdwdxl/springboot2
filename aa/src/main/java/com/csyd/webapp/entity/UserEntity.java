@@ -1,13 +1,13 @@
 package com.csyd.webapp.entity;
 
 public class UserEntity {
-    private Long id;
+    private int id;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -43,4 +43,6 @@ public class UserEntity {
     public void setAge(int age) {
         this.age = age;
     }
+
+
 }

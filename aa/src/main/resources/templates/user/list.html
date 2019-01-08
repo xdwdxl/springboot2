@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xmlns:c="http://java.sun.com/jsp/jstl/core">
 <head>
     <title>Hello World!</title>
 </head>
@@ -14,13 +14,14 @@
         <th>age</th>
         <th>address</th>
     </tr>
-
+<!--<c:forEach item="${list}" >-->
     <tr th:each="customer : ${user}">
-        <td th:text="${user.id}"></td>
-        <td th:text="${user.username}"></td>
-        <td th:text="${user.age}"></td>
-        <td th:text="${user.address}"></td>
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.username}"></td>
+        <td th:text="${customer.age}"></td>
+        <td th:text="${customer.address}"></td>
     </tr>
+<!--</c:forEach>-->
 </table>
 </body>
 </html>
